@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* 기본 설정: 페이지 전체 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  table, th, td {
+    border: 1px solid #bcbcbc;
+  }
+  table {
+    width: 100%;
+  }
+.login_container
+{
+	float: right;
+}
+
+menu_container {
+	background-color: blue;
+}
+
+/*메인페이지*/
+
+.menu clearfix{
+  float: left;
+  /* 수직으로 가운데 정렬은 안쪽 여백을 둔다 */
+  padding: 8px 10px;
+  font-weight: bold;
+}
+.p{background-color: blue;}
