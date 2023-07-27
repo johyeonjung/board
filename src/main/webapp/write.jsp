@@ -16,8 +16,8 @@
 	String content = request.getParameter("content");
 	
 
-		WriteDAO dao = new WriteDAO();
-		int result = dao.write(id,subject,content);
+	WriteDAO dao = new WriteDAO();
+	int result = dao.write(id,subject,content);
 
 
 		

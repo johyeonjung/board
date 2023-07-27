@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.menu-item{
+  float: left;
+  /* 수직으로 가운데 정렬은 안쪽 여백을 둔다 */
+  padding: 8px 10px;
+  font-weight: bold;
+  background-color: burlywood;
+}
+body {
+	column-count: 2;
+	-webkit-column-width: 240px;
+	-moz-column-width: 12px;
+	column-width: 200px;
+	
+}

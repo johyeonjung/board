@@ -9,6 +9,7 @@
 <title>로그인 처리 jsp</title>
 </head>
 <body>
+<form>
 <%
 	request.setCharacterEncoding("UTF-8");
 
@@ -18,8 +19,12 @@
 	UserDAO user = new UserDAO();
 	int check = user.login(id,pwd);
 	if(check==1) {
+		session.setAttribute("id",id);
 		
 		%><script>alert("로그인성공");</script><% 
+		id=(String)session.getAttribute("id");
+		pageContext.forward("main.jsp");
+		
 	}else if(user.login(id, pwd)==0) {
 		%><script>alert("비밀번호가 틀렸습니다");</script><%
 	}else{
@@ -29,6 +34,6 @@
 	<%=id %>
 	<%=pwd %>
 	
-
+</form>
 </body>
 </html>

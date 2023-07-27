@@ -23,10 +23,11 @@ menu_container {
 
 /*메인페이지*/
 
-.menu clearfix{
+.menu-item{
   float: left;
   /* 수직으로 가운데 정렬은 안쪽 여백을 둔다 */
   padding: 8px 10px;
   font-weight: bold;
+  background-color:blue;
 }
 .p{background-color: blue;}
